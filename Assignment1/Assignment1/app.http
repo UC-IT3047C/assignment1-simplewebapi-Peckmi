@@ -1,0 +1,40 @@
+@WebApiHost = https://localhost:7003
+
+###
+GET {{WebApiHost}}/api/v1/weatherforecast/GetWeatherForecast/3
+
+###
+
+POST {{WebApiHost}}/api/v1/weatherforecast/PostWeatherForecast/5
+Content-Type: application/json
+
+{
+"Greeting":"Hello World"
+}
+
+
+###
+
+GET {{WebApiHost}}/api/v1/practice/getpractice
+
+
+###
+
+GET {{WebApiHost}}/api/v1/practice/getthing
+
+
+###
+
+GET {{WebApiHost}}/api/v1/practice/getactionresult
+
+
+###
+
+POST {{WebApiHost}}/api/v1/practice/postpractice
+Content-Type: application/json
+
+{
+  "id": 1,
+  "name": "StudyGuide",
+  "description": "Study materials and textbook pages"
+}
